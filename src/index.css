@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100dvh;
+  font-family: "Lato", serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.customScrollbar::-webkit-scrollbar {
+  @apply w-1 h-1;
+}
+.customScrollbar::-webkit-scrollbar-track {
+  @apply bg-primary-700 rounded-lg;
+}
+.customScrollbar::-webkit-scrollbar-thumb {
+  @apply bg-tertiary-700 rounded-lg;
+}
+
+.nav a.active {
+  @apply underline decoration-wavy decoration-secondary-700 underline-offset-4 text-primary-900;
+}
+
+.swiper-button-prev {
+  @apply text-tertiary-800 absolute top-[90%];
+}
+.swiper-button-next {
+  @apply text-tertiary-800 absolute top-[90%];
+}
+
+.swiper-pagination-progressbar {
+  @apply bg-tertiary-800;
+}
+
+.swiper-pagination-progressbar-fill {
+  @apply bg-tertiary-400 !important;
+}
+
+.navLinkHover {
+  @apply hover:underline hover:decoration-wavy hover:decoration-secondary-700 hover:underline-offset-4 hover:text-primary-900 transition-all duration-500 ease-in-out;
+}
