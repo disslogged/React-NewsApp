@@ -1,16 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import {
-  fetchHeadlines,
-  fetchHeadlinesByCategory,
-} from "../../api/fetchHeadlines";
+import { fetchHeadlines } from "../../api/fetchHeadlines";
 import { categories } from "../../utils/constant";
 
 import spinner from "../../assets/spinner.gif";
 
 const Headlines = () => {
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage] = useState(1);
   const [queryParams] = useSearchParams();
   const category = queryParams.get("category") || null;
 

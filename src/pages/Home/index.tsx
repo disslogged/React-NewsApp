@@ -3,7 +3,6 @@ import WelcomeMessage from "./WelcomeMessage";
 import SectionHeader from "../../components/UI/SectionHeader";
 import TopHeadlinesPagination from "./TopHeadlinesPagination";
 import Categories from "./Categories";
-import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
